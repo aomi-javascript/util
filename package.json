@@ -1,6 +1,6 @@
 {
   "name": "@aomi/utils",
-  "version": "1.0.1",
+  "version": "1.0.1-Alpha.0",
   "description": "Common Utils",
   "main": "index.js",
   "repository": "git@github.com:aomi-web/util.git",
