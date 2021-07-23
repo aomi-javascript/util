@@ -15,9 +15,12 @@ export function setAdministrator(administrator) {
  * 是否有权限信息
  * @param authorities 当前权限
  */
-export function hasAuthorities(authorities: Array<string> | string | undefined) {
+export function hasAuthorities(authorities: Array<string> | string | undefined | boolean) {
   if (data.administrator) {
     return true;
+  }
+  if (typeof authorities === 'boolean') {
+    return authorities;
   }
   if (!authorities)
     return false;
