@@ -13,15 +13,9 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepublishOnly": "tsc -d"
   },
-  "peerDependencies": {
-    "moment": "^2.29.1",
-    "object-path": "^0.11.5"
-  },
   "devDependencies": {
+    "moment": "^2.29.3",
+    "object-path": "^0.11.8",
     "typescript": "^4.2.4"
-  },
-  "optionalDependencies": {
-    "moment": "^2.29.1",
-    "object-path": "^0.11.5"
   }
 }
