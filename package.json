@@ -1,17 +1,65 @@
 {
   "name": "@aomi/utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Common Utils",
-  "main": "index.js",
   "repository": "git@github.com:aomi-web/util.git",
   "author": "sean <sean.snow@live.com>",
   "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    },
+    "./ArrayUtil": {
+      "import": "./es/ArrayUtil.js",
+      "require": "./lib/ArrayUtil.js"
+    },
+    "./DateUtil": {
+      "import": "./es/DateUtil.js",
+      "require": "./lib/DateUtil.js"
+    },
+    "./hasAuthorities": {
+      "import": "./es/hasAuthorities.js",
+      "require": "./lib/hasAuthorities.js"
+    },
+    "./HttpUtil": {
+      "import": "./es/HttpUtil.js",
+      "require": "./lib/HttpUtil.js"
+    },
+    "./MomentDateUtil": {
+      "import": "./es/MomentDateUtil.js",
+      "require": "./lib/MomentDateUtil.js"
+    },
+    "./NumberUtil": {
+      "import": "./es/NumberUtil.js",
+      "require": "./lib/NumberUtil.js"
+    },
+    "./ObjectUtils": {
+      "import": "./es/ObjectUtils.js",
+      "require": "./lib/ObjectUtils.js"
+    },
+    "./ScrollUtil": {
+      "import": "./es/ScrollUtil.js",
+      "require": "./lib/ScrollUtil.js"
+    },
+    "./StringUtil": {
+      "import": "./es/StringUtil.js",
+      "require": "./lib/StringUtil.js"
+    }
+  },
+  "files": [
+    "lib",
+    "es"
+  ],
   "scripts": {
     "clean": "find . -path \"./node_modules\" -prune -o -name \"*.js\" -o -name \"*.js.map\" -o -name \"*.d.ts\" |xargs rm -f | echo ''",
-    "build": "tsc -d",
+    "build": "rm -rf es lib && tsc -d && tsc --project tsconfig.cjs.json",
     "watch": "tsc -d && tsc -w",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "prepublishOnly": "tsc -d"
+    "prepublishOnly": "yarn build"
   },
   "devDependencies": {
     "moment": "^2.29.3",
