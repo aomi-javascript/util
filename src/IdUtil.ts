@@ -17,7 +17,7 @@ export class MongoId {
 
 
   generate() {
-    const timestamp = (new Date().getTime() / 1000).toString(16);
+    const timestamp = Math.floor(Date.now() / 1000).toString(16);
     const counter = this.counter.toString(16).padStart(6, '0');
     this.counter++;
     return `${timestamp}${this.machineId}${this.processId}${counter}`;
