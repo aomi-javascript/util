@@ -1,6 +1,6 @@
 {
   "name": "@aomi/utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Common Utils",
   "repository": "git@github.com:aomi-web/util.git",
   "author": "sean <sean.snow@live.com>",
@@ -30,8 +30,8 @@
       "require": "./lib/HttpUtil.js"
     },
     "./IdUtil": {
-      "import": "./es/Idutil.js",
-      "require": "./lib/Idutil.js"
+      "import": "./es/IdUtil.js",
+      "require": "./lib/IdUtil.js"
     },
     "./MomentDateUtil": {
       "import": "./es/MomentDateUtil.js",
