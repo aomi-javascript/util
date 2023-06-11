@@ -29,6 +29,10 @@
       "import": "./es/HttpUtil.js",
       "require": "./lib/HttpUtil.js"
     },
+    "./IdUtil": {
+      "import": "./es/Idutil.js",
+      "require": "./lib/Idutil.js"
+    },
     "./MomentDateUtil": {
       "import": "./es/MomentDateUtil.js",
       "require": "./lib/MomentDateUtil.js"
