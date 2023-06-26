@@ -1,5 +1,7 @@
-import * as HttpUtil from './HttpUtil';
+export {MomentDateUtil} from './MomentDateUtil'
+export {ArrayUtil} from './ArrayUtil'
 
-export {
-  HttpUtil
-};
+export {hasAuthorities} from './hasAuthorities'
+
+export {ObjectUtils} from './ObjectUtils'
+
