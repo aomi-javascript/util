@@ -1,6 +1,6 @@
 {
   "name": "@aomi/utils",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Common Utils",
   "repository": "git@github.com:aomi-web/util.git",
   "author": "sean <sean.snow@live.com>",
@@ -11,46 +11,57 @@
   "exports": {
     ".": {
       "import": "./es/index.js",
+      "types": "./es/index.d.ts",
       "require": "./lib/index.js"
     },
     "./ArrayUtil": {
       "import": "./es/ArrayUtil.js",
+      "types": "./es/ArrayUtil.d.ts",
       "require": "./lib/ArrayUtil.js"
     },
     "./DateUtil": {
       "import": "./es/DateUtil.js",
+      "types": "./es/DateUtil.d.ts",
       "require": "./lib/DateUtil.js"
     },
     "./hasAuthorities": {
       "import": "./es/hasAuthorities.js",
+      "types": "./es/hasAuthorities.d.ts",
       "require": "./lib/hasAuthorities.js"
     },
     "./HttpUtil": {
       "import": "./es/HttpUtil.js",
+      "types": "./es/HttpUtil.d.ts",
       "require": "./lib/HttpUtil.js"
     },
     "./IdUtil": {
       "import": "./es/IdUtil.js",
+      "types": "./es/IdUtil.d.ts",
       "require": "./lib/IdUtil.js"
     },
     "./MomentDateUtil": {
       "import": "./es/MomentDateUtil.js",
+      "types": "./es/MomentDateUtil.d.ts",
       "require": "./lib/MomentDateUtil.js"
     },
     "./NumberUtil": {
       "import": "./es/NumberUtil.js",
+      "types": "./es/NumberUtil.d.ts",
       "require": "./lib/NumberUtil.js"
     },
     "./ObjectUtils": {
       "import": "./es/ObjectUtils.js",
+      "types": "./es/ObjectUtils.d.ts",
       "require": "./lib/ObjectUtils.js"
     },
     "./ScrollUtil": {
       "import": "./es/ScrollUtil.js",
+      "types": "./es/ScrollUtil.d.ts",
       "require": "./lib/ScrollUtil.js"
     },
     "./StringUtil": {
       "import": "./es/StringUtil.js",
+      "types": "./es/StringUtil.d.ts",
       "require": "./lib/StringUtil.js"
     }
   },
