@@ -4,6 +4,4 @@
     "module": "commonjs",
     "outDir": "lib"
   },
-  "include": ["src"],
-  "exclude": ["node_modules"]
 }
