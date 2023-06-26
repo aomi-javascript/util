@@ -19,8 +19,10 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepublishOnly": "yarn build"
   },
+  "dependencies": {
+    "moment": "^2.29.3"
+  },
   "devDependencies": {
-    "moment": "^2.29.3",
     "object-path": "^0.11.8",
     "typescript": "^4.2.4"
   }
